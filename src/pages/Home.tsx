@@ -6,6 +6,7 @@ import Courses from "../components/Courses";
 import ContactUs from "../components/ContactUs";
 import PricePlan from "../components/Pricing";
 import Footer from "../components/Footer";
+import MentorShip from "../components/MentorShip";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <NavBar></NavBar>
       <HomeHero></HomeHero>
       <Courses></Courses>
+      <MentorShip></MentorShip>
       <Metrics></Metrics>
 
       <PricePlan></PricePlan>

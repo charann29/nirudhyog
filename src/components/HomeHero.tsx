@@ -1,6 +1,7 @@
 const HomeHero = () => {
   return (
-    <div className="bg-[#101114] w-screen h-screen text-white flex justify-center items-center md:pt-36">
+    <div className="bg-[#101114]  w-screen h-screen text-white flex justify-center items-center md:pt-36">
+      
       <div className="px-4 max-w-[70rem] flex flex-col mx-auto  gap-12 ">
         <div className="">
           <div className="max-w-6xl text-center  mx-auto text-2xl font-semibold leading-relaxed md:text-4xl lg:text-5xl">

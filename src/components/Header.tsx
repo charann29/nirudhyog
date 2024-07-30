@@ -16,6 +16,15 @@ const NavBar = () => {
         click ? "bg-[#121212]" : ""
       } `}
     >
+      <div className="w-full mx-auto bg-[#004aad] p-[2px]">
+        <p className="text-center">
+          parterned with{" "}
+          <span className="underline cursor-pointer">Elevatebox</span>
+        </p>
+      </div>
+      {/* <div className="absolute bg-red-500  p-[1px]   w-[169px] left-0 top-[76px] rotate-[-90deg]  translate-x-[-75px] ">
+        <p className="text-sm">Parterned with ElevateBox</p>
+      </div> */}
       <nav
         className={`  flex items-center  pt-4 pb-3   justify-between w-[90%] lg:w-[80%] xl:w-[70%] 2xl:w-50% ml-auto mr-auto  `}
       >
@@ -30,22 +39,22 @@ const NavBar = () => {
             href="#cirriculum"
             className="cursor-pointer select-none rounded-full  font-semibold text-gray-50 transition duration-300 hover:text-blue-300"
           >
-            Cirriculum
+            Courses
           </a>
+          <Link
+            to={"aboutUs"}
+            className="cursor-pointer select-none rounded-full  font-semibold text-gray-50 transition duration-300 hover:text-blue-300"
+          >
+            Services
+          </Link>
           <Link
             to="/mentorship"
             className="cursor-pointer select-none rounded-full  font-semibold text-gray-50 transition duration-300 hover:text-blue-300"
           >
-            Mentorship
+            Contact Us
           </Link>
           <Link
             to="/events"
-            className="cursor-pointer select-none rounded-full  font-semibold text-gray-50 transition duration-300 hover:text-blue-300"
-          >
-            Events
-          </Link>
-          <Link
-            to={"aboutUs"}
             className="cursor-pointer select-none rounded-full  font-semibold text-gray-50 transition duration-300 hover:text-blue-300"
           >
             About Us
