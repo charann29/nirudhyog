@@ -4,7 +4,7 @@ import { db } from "../firebase";
 
 const FindWorkPage = () => {
   const [data, setData] = useState<any>([]);
-  const [error, setError] = useState("");
+  const [_error, setError] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
@@ -105,7 +105,7 @@ const FindWorkPage = () => {
                 >
                   <div className="mb-4 flex items-center gap-2">
                     <p className="text-xs    text-gray-500">
-                      posted on : {d.postedDate.slice(0, 10)}
+                      posted on : {}
                     </p>
                   </div>
                   <div className="flex grow gap-2">

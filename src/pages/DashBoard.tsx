@@ -84,15 +84,6 @@ function JobsManager() {
     jobType: "",
   });
   const [isEditing, setIsEditing] = useState(false);
-  const [newJob, setNewJob] = useState({
-    jobName: "",
-    companyName: "",
-    jobDescription: "",
-    domain: "",
-    salaryRange: "",
-    officeType: "",
-    jobType: "",
-  });
 
   useEffect(() => {
     fetchJobs();
