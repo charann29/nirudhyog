@@ -8,7 +8,7 @@ const Metrics = () => {
         <a
           target="_blank"
           href="https://www.whatsapp.com/catalog/918121398942/"
-          className="COUNT cursor-pointer hover:bg-purple-800 w-full flex lg:h-68 lg:w-68 flex-col items-center justify-center rounded-3xl bg-purple-200 px-4 py-8 text-center h-72 md:px-6 md:py-10"
+          className="COUNT cursor-pointer hover:bg-purple-800 w-full flex lg:h-68 lg:w-68 flex-col items-center justify-center rounded-3xl bg-purple-500 px-4 py-8 text-center h-72 md:px-6 md:py-10"
         >
           <h2 className="text-4xl text-white font-semibold">
             100% ATS Upgrade
@@ -21,7 +21,7 @@ const Metrics = () => {
         <a
           target="_blank"
           href="https://www.whatsapp.com/catalog/918121398942/"
-          className="COUNT cursor-pointer hover:bg-green-800 flex w-full lg:h-68 lg:w-68 flex-col items-center justify-center rounded-3xl bg-green-300 px-4 py-8 text-center h-72 md:px-6 md:py-10"
+          className="COUNT cursor-pointer hover:bg-green-800 flex w-full lg:h-68 lg:w-68 flex-col items-center justify-center rounded-3xl bg-green-500 px-4 py-8 text-center h-72 md:px-6 md:py-10"
         >
           <h2 className="text-4xl text-white font-semibold">
             Portfolio Creation
@@ -33,7 +33,7 @@ const Metrics = () => {
         <a
           target="_blank"
           href="https://www.whatsapp.com/catalog/918121398942/"
-          className="COUNT cursor-pointer hover:bg-yellow-600 flex w-full lg:h-68 lg:w-68 flex-col items-center justify-center rounded-3xl bg-yellow-300 px-4 py-8 text-center h-72 md:px-6 md:py-10"
+          className="COUNT cursor-pointer hover:bg-yellow-600 flex w-full lg:h-68 lg:w-68 flex-col items-center justify-center rounded-3xl bg-yellow-500 px-4 py-8 text-center h-72 md:px-6 md:py-10"
         >
           <h2 className="text-4xl text-white font-semibold">
             Linkedin Optimization
@@ -45,7 +45,7 @@ const Metrics = () => {
         <a
           target="_blank"
           href="https://elevatebox.in"
-          className="COUNT cursor-pointer hover:bg-red-800 flex w-full lg:h-68 lg:w-68 flex-col items-center justify-center rounded-3xl bg-red-300 px-4 py-8 text-center h-72 md:px-6 md:py-10"
+          className="COUNT cursor-pointer hover:bg-red-800 flex w-full lg:h-68 lg:w-68 flex-col items-center justify-center rounded-3xl bg-red-500 px-4 py-8 text-center h-72 md:px-6 md:py-10"
         >
           <h2 className="text-4xl text-white font-semibold">Development</h2>
           <p className="text-white">Turn your thoughts in to business</p>

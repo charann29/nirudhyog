@@ -1,16 +1,18 @@
 import COURSE1 from "../assets/COURSE1.png";
-import COURSE2 from "../assets/COURSE2.png";
+import COURSE7 from "../assets/COURSE7.jpg";
 
 import COURSE3 from "../assets/COURSE3.jpeg";
 import COURSE4 from "../assets/COURSE5.png";
+import COURSE6 from "../assets/COURSE6.jpg"
 
 const Courses = () => {
   return (
     <section id="#courses" className="bg-backgroundColor py-16 px-6">
       <div className="flex flex-col justify-center items-center   px-4 text-center w-[90%] mr-auto ml-auto  lg:w-[85%] xl:w-[70%]  2xl:w-50% ">
-        <h2 className="text-2xl  xl:text-5xl leading-[1.125] font-bold text-black">
-          A place for individuals aspiring to become a skilled engineer
-        </h2>
+      <h2 className="text-2xl xl:text-5xl leading-[1.125] font-bold text-black mt-12"> {/* Added margin-top here */}
+  A place for individuals aspiring to become a skilled engineer
+</h2>
+
         {/* <div className="flex overflow-x-auto flex-wrap gap-8 justify-center p-4 mx-auto mt-4 max-w-2xl no-scrollbar">
           <PastEventButton
             text={"Weekly Contest"}
@@ -32,11 +34,24 @@ const Courses = () => {
           ></PastEventButton>
         </div> */}
 
-        <div className="flex flex-wrap gap-6 justify-center mt-12">
-          {PAST_WEEKLY_CONTEST.map((data, index) => (
-            <MissedEventCard key={index} data={data}></MissedEventCard>
-          ))}
-        </div>
+<div className="flex flex-wrap gap-8 justify-center mt-12">
+  {PAST_WEEKLY_CONTEST.map((data, index) => (
+    <div
+      key={index}
+      className="relative rounded-2xl overflow-hidden transition-transform duration-300 ease-in-out hover:shadow-lg hover:shadow-transparent hover:transform hover:scale-105"
+    >
+      <MissedEventCard data={data} />
+      <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-2xl">
+      <p className="text-white font-bold text-center">{data.buttonText}</p>
+
+      </div>
+    </div>
+  ))}
+</div>
+
+
+
+
 
         <a
           href="/register"
@@ -85,28 +100,19 @@ const MissedEventCard = ({ data }: any) => {
         className="object-cover brightness-90 h-[200px] aspect-video"
         alt="How does blockchain work? | Blockchain systems rely on a peer-to-peer network of computers"
       ></img>
-      <figcaption className="lg:flex lg:flex-col lg:justify-between  px-4 py-3 text-lg font-medium bg-[#1e1e1e]">
+      {/* <figcaption className="lg:flex lg:flex-col lg:justify-between  px-4 py-3 text-lg font-medium bg-[#1e1e1e]"> */}
         {/* {data.name} */}
         {/* <button className="px-4 py-2 rounded-full mt-4 w-full text-blue-600 rounded border-2 border-current transition-all outline-none hover:text-blue-800 hover:bg-blue-600/10 focus:text-blue-800 focus:bg-blue-800/10">
           {data.buttonText}
         </button> */}
-        <p>{data.buttonText}</p>
-      </figcaption>
+
+      {/* </figcaption> */}
     </figure>
   );
 };
 
 const PAST_WEEKLY_CONTEST = [
-  {
-    name: "How does blockchain work? | Blockchain systems rely on a peer-to-peer network of computers ",
-    image: COURSE2,
-    buttonText: "DSA",
-  },
-  {
-    name: "How does blockchain work? | Blockchain systems rely on a peer-to-peer network of computers ",
-    image: COURSE3,
-    buttonText: "MERN Stack",
-  },
+
   {
     name: "How does blockchain work? | Blockchain systems rely on a peer-to-peer network of computers ",
     image: COURSE4,
@@ -114,12 +120,25 @@ const PAST_WEEKLY_CONTEST = [
   },
   {
     name: "How does blockchain work? | Blockchain systems rely on a peer-to-peer network of computers ",
-    image: COURSE1,
-    buttonText: "Devops",
+    image: COURSE7,
+    buttonText: "DSA",
   },
   {
     name: "How does blockchain work? | Blockchain systems rely on a peer-to-peer network of computers ",
-    image: "https://i.ytimg.com/vi/SSo_EIwHSd4/maxresdefault.jpg",
+    image: COURSE3,
+    buttonText: "MERN Stack",
+  },
+
+
+
+  {
+    name: "How does blockchain work? | Blockchain systems rely on a peer-to-peer network of computers ",
+    image: COURSE6,
     buttonText: "Blockchain",
   },
+  {
+    name: "How does blockchain work? | Blockchain systems rely on a peer-to-peer network of computers ",
+    image: COURSE1,
+    buttonText: "Devops",
+  }
 ];

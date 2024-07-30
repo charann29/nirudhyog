@@ -127,17 +127,24 @@ const Footer = () => {
             </div>
           </div>
           <div className="mt-12 lg:mt-0 mx-auto text-center lg:text-left">
-            <p className="font-bold text-gray-300 ">
-              © 2024. Nirudhyog. All rights reserved.
-            </p>
+          <p className="font-bold text-gray-300">
+            © 2024. Nirudhyog.
+          </p>
+          <p className="text-gray-300">
+            All rights reserved.
+          </p>
+          <p className="font-bold">
             <a
               href="https://elevatebox.in"
               target="_blank"
-              className="font-bold text-blue-500 underline cursor-pointer"
+              className="text-blue-500 underline cursor-pointer"
+              rel="noopener noreferrer"
             >
-              Developed by ElevateBox
+              Powered by ElevateBox
             </a>
-          </div>
+          </p>
+        </div>
+
         </div>
       </div>
     </div>
