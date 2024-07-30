@@ -11,7 +11,6 @@ import MentorShip from "../components/MentorShip";
 const Home = () => {
   return (
     <div className="w-screen ">
-      <NavBar></NavBar>
       <HomeHero></HomeHero>
       <Courses></Courses>
       <MentorShip></MentorShip>
@@ -20,7 +19,7 @@ const Home = () => {
       <PricePlan></PricePlan>
       <FAQ></FAQ>
       <ContactUs></ContactUs>
-      <Footer></Footer>
+
     </div>
   );
 };
