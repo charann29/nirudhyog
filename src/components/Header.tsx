@@ -123,21 +123,21 @@ const NavBar = () => {
           click ? "translate-x-0 h-auto py-4" : "-translate-x-[200%]"
         } duration-300  ml-auto mr-auto bg-[#121212]  border-[#1E1E1E]  border-t-[1px]   w-[90%] lg:w-[80%] xl:w-[70%] 2xl:w-50%    lg:hidden`}
       >
-        <a href="#cirriculum" className="mb-2 text-[18px] cursor-pointer">
-          Cirriculum
+        <a href="/courses" className="mb-2 text-[18px] cursor-pointer">
+          courses
         </a>
         <br />
-        <a href="#events" className="mb-2 text-[18px] cursor-pointer">
-          Mentorship
+        <a href="/services" className="mb-2 text-[18px] cursor-pointer">
+          services
         </a>
         <br />
-        <a href="#mentorship" className="mb-2 text-[18px] cursor-pointer">
-          Events
-        </a>
-        <br />
-        <Link to={"aboutUs"} className="mb-2 !text-[18px] cursor-pointer">
+        <a href="/aboutus" className="mb-2 text-[18px] cursor-pointer">
           About Us
-        </Link>
+        </a>
+        <br />
+        <a href={"/contactus"} className="mb-2 !text-[18px] cursor-pointer">
+          Contact Us
+        </a>
       </div>
     </header>
   );
