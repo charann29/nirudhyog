@@ -14,15 +14,15 @@ const Aboutus = () => {
             About Us
           </h1>{" "}
           <p>
-            At GoalStreet, we believe in empowering students to unlock their
-            full potential and embark on successful career journeys. We
-            understand that internships play a pivotal role in shaping career
-            paths, and our platform is designed to connect students with
-            valuable internship opportunities that align with their aspirations
-            and academic pursuits.
+            At Nirudyog, we believe in empowering students to unlock their full
+            potential and embark on successful career journeys. We understand
+            that placement training play a pivotal role in shaping career paths,
+            and our platform is designed to connect students with valuable
+            training and opportunities that align with their aspirations and
+            academic pursuits.
             {<br />}
             {<br />}
-            Our mission at GoalStreet is simple yet profound: to bridge the gap
+            Our mission at Nirudyog is simple yet profound: to bridge the gap
             between education and professional experience by providing students
             with meaningful internship opportunities. We strive to facilitate
             connections between ambitious students and reputable organizations,

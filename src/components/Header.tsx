@@ -35,7 +35,13 @@ const NavBar = () => {
       <div className="w-full mx-auto bg-[#004aad] p-[2px]">
         <p className="text-center">
           parterned with{" "}
-          <span className="underline cursor-pointer">Elevatebox</span>
+          <a
+            href="https://elevatebox.in"
+            target="_blank"
+            className="underline cursor-pointer"
+          >
+            Elevatebox
+          </a>
         </p>
       </div>
       {/* <div className="absolute bg-red-500  p-[1px]   w-[169px] left-0 top-[76px] rotate-[-90deg]  translate-x-[-75px] ">
@@ -58,7 +64,7 @@ const NavBar = () => {
             Courses
           </a>
           <Link
-            to={"aboutUs"}
+            to={"services"}
             className="cursor-pointer select-none rounded-full  font-semibold text-gray-50 transition duration-300 hover:text-blue-300"
           >
             Services

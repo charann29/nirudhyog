@@ -20,18 +20,20 @@ const HomeHero = () => {
             students and companies grow together.
           </p>
           <div className="flex flex-col  ">
-            <button
+            <a
+              href="/findwork"
               className="mt-4 mx-auto w-full sm:w-[50%]  md:w-auto cursor-pointer text-white hover:text-black flex shrink-0 justify-center items-center gap-2 font-semibold transition-all duration-300 rounded-full focus-visble:ring focus-visble:ring-red-800 focus-visble:ring-opacity-10 ring-red-800 focus:outline-none select-none disabled:cursor-not-allowed disabled:opacity-80   bg-[#004AAD] hover:bg-white  lg:px-8 px-7 lg:py-4 py-3 lg:text-lg text-md w-full  "
               type="button"
             >
               Find Work
-            </button>
-            <button
+            </a>
+            <a
+              href="/register"
               className="md:hidden mt-4 w-full sm:w-[50%]  md:w-auto lg:w-auto mx-auto cursor-pointer text-white hover:text-black flex shrink-0 justify-center items-center gap-2 font-semibold transition-all duration-300 rounded-full focus-visble:ring focus-visble:ring-red-800 focus-visble:ring-opacity-10 ring-red-800 focus:outline-none select-none disabled:cursor-not-allowed disabled:opacity-80   bg-[#004AAD] hover:bg-white  lg:px-8 px-7 lg:py-4 py-3 lg:text-lg text-md w-full "
               type="button"
             >
               Join Us
-            </button>
+            </a>
           </div>
         </div>
         <div className="sm:w-[80%] md:w-[60%] lg:w-[40%] mx-auto ">

@@ -14,6 +14,7 @@ const FindWorkPage = () => {
         const snapshot = await getDocs(jobsCollection);
         const jobsData = snapshot.docs.map((doc) => doc.data());
         setData(jobsData);
+        console.log("jobs ", jobsData);
       } catch (error) {
         console.error("Error fetching data:", error);
         setError("Error fetching data. Please try again.");
@@ -99,15 +100,17 @@ const FindWorkPage = () => {
           <div className="flex min-w-0 items-start gap-6">
             <div className="grid  shrink-0 gap-4 w-full md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
               {filteredData?.map((d: any) => (
-                <div
+                <a
+                  href={d?.jobLink}
+                  target="_blank"
                   className="flex min-h-[192px] min-w-[100%] cursor-pointer flex-col rounded-lg border p-6 border-gray-100 bg-white shadow-md"
                   id="work_12982"
                 >
-                  <div className="mb-4 flex items-center gap-2">
+                  {/* <div className="mb-4 flex items-center gap-2">
                     <p className="text-xs    text-gray-500">
                       posted on : {}
                     </p>
-                  </div>
+                  </div> */}
                   <div className="flex grow gap-2">
                     <div className="grow space-y-1">
                       <p className="font-semibold line-clamp-2 text-black">
@@ -142,7 +145,7 @@ const FindWorkPage = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>

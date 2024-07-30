@@ -1,3 +1,9 @@
+import COURSE1 from "../assets/COURSE1.png";
+import COURSE2 from "../assets/COURSE2.png";
+
+import COURSE3 from "../assets/COURSE3.jpeg";
+import COURSE4 from "../assets/COURSE5.png";
+
 const Courses = () => {
   return (
     <section id="#courses" className="bg-backgroundColor py-16 px-6">
@@ -32,12 +38,13 @@ const Courses = () => {
           ))}
         </div>
 
-        <button
+        <a
+          href="/register"
           className="cursor-pointer text-black flex shrink-0 justify-center items-center gap-2 font-semibold transition-all duration-300 rounded-full focus-visble:ring focus-visble:ring-red-800 focus-visble:ring-opacity-10 ring-red-800 focus:outline-none select-none disabled:cursor-not-allowed disabled:opacity-80   bg-[#004AAD]  lg:px-8 px-7 lg:py-4 py-3 lg:text-lg text-md w-full lg:w-auto  text-white mt-12"
           type="button"
         >
           Know More
-        </button>
+        </a>
       </div>
     </section>
   );
@@ -83,7 +90,7 @@ const MissedEventCard = ({ data }: any) => {
         {/* <button className="px-4 py-2 rounded-full mt-4 w-full text-blue-600 rounded border-2 border-current transition-all outline-none hover:text-blue-800 hover:bg-blue-600/10 focus:text-blue-800 focus:bg-blue-800/10">
           {data.buttonText}
         </button> */}
-        <p>Course Name</p>
+        <p>{data.buttonText}</p>
       </figcaption>
     </figure>
   );
@@ -92,27 +99,27 @@ const MissedEventCard = ({ data }: any) => {
 const PAST_WEEKLY_CONTEST = [
   {
     name: "How does blockchain work? | Blockchain systems rely on a peer-to-peer network of computers ",
-    image: "https://i.ytimg.com/vi/SSo_EIwHSd4/maxresdefault.jpg",
-    buttonText: "Try Now",
+    image: COURSE2,
+    buttonText: "DSA",
+  },
+  {
+    name: "How does blockchain work? | Blockchain systems rely on a peer-to-peer network of computers ",
+    image: COURSE3,
+    buttonText: "MERN Stack",
+  },
+  {
+    name: "How does blockchain work? | Blockchain systems rely on a peer-to-peer network of computers ",
+    image: COURSE4,
+    buttonText: "Programming Languages",
+  },
+  {
+    name: "How does blockchain work? | Blockchain systems rely on a peer-to-peer network of computers ",
+    image: COURSE1,
+    buttonText: "Devops",
   },
   {
     name: "How does blockchain work? | Blockchain systems rely on a peer-to-peer network of computers ",
     image: "https://i.ytimg.com/vi/SSo_EIwHSd4/maxresdefault.jpg",
-    buttonText: "Try Now",
-  },
-  {
-    name: "How does blockchain work? | Blockchain systems rely on a peer-to-peer network of computers ",
-    image: "https://i.ytimg.com/vi/SSo_EIwHSd4/maxresdefault.jpg",
-    buttonText: "Try Now",
-  },
-  {
-    name: "How does blockchain work? | Blockchain systems rely on a peer-to-peer network of computers ",
-    image: "https://i.ytimg.com/vi/SSo_EIwHSd4/maxresdefault.jpg",
-    buttonText: "Try Now",
-  },
-  {
-    name: "How does blockchain work? | Blockchain systems rely on a peer-to-peer network of computers ",
-    image: "https://i.ytimg.com/vi/SSo_EIwHSd4/maxresdefault.jpg",
-    buttonText: "Try Now",
+    buttonText: "Blockchain",
   },
 ];

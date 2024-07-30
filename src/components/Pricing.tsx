@@ -93,12 +93,13 @@ const PricePlan = () => {
                   </div>
                 ))}
               </div>
-              <button
+              <a
+                href="/register"
                 type="button"
                 className="inline-flex items-center whitespace-nowrap select-none justify-center font-medium gap-2 duration-200 ring-offset-background transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none rounded-lg disabled:opacity-50 disabled:grayscale text-sm md:text-sm px-4 md:px-6 py-2 md:py-2.5 w-fit bg-white text-gray-900 hover:bg-opacity-90"
               >
                 Enroll now
-              </button>
+              </a>
             </div>
           ))}
         </div>

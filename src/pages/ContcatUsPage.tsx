@@ -1,9 +1,8 @@
-
 import ContactUs from "../components/ContactUs";
 
 const ContcatUsPage = () => {
   return (
-    <div className="pt-36">
+    <div className="pt-36 ">
       <ContactUs></ContactUs>
     </div>
   );

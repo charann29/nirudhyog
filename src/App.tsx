@@ -8,6 +8,7 @@ import ContcatUsPage from "./pages/ContcatUsPage";
 import Register from "./pages/FormPage";
 import FindWorkPage from "./pages/FindWorkPage";
 import AdminDashboard from "./pages/DashBoard";
+import ServicePage from "./pages/ServicePage";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/aboutus" element={<Aboutus></Aboutus>}></Route>
         <Route path="/courses" element={<CoursePage></CoursePage>}></Route>
+        <Route path="/services" element={<ServicePage></ServicePage>}></Route>
         <Route
           path="/contactus"
           element={<ContcatUsPage></ContcatUsPage>}

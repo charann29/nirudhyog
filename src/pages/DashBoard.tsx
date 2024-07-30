@@ -54,7 +54,7 @@ function AdminDashboard() {
             Manage Jobs
           </button>
           <button
-            className={`px-4 py-2 ${
+            className={`px-4 py-2  mr-2 ${
               activeTab === "registrations"
                 ? "bg-blue-500 text-white"
                 : "bg-gray-400"
@@ -63,8 +63,24 @@ function AdminDashboard() {
           >
             View Registrations
           </button>
+          <button
+            className={`px-4 py-2 ${
+              activeTab === "contacts"
+                ? "bg-blue-500 text-white"
+                : "bg-gray-400"
+            }`}
+            onClick={() => setActiveTab("contacts")}
+          >
+            View Contacts
+          </button>
         </div>
-        {activeTab === "jobs" ? <JobsManager /> : <RegistrationsViewer />}
+        {activeTab === "jobs" ? (
+          <JobsManager />
+        ) : activeTab === "registrations" ? (
+          <RegistrationsViewer />
+        ) : (
+          <ContactsManager></ContactsManager>
+        )}
       </div>
     </div>
   );
@@ -82,6 +98,7 @@ function JobsManager() {
     salaryRange: "",
     officeType: "",
     jobType: "",
+    jobLink: "",
   });
   const [isEditing, setIsEditing] = useState(false);
 
@@ -103,6 +120,7 @@ function JobsManager() {
         salaryRange: "",
         officeType: "",
         jobType: "",
+        jobLink: "",
       });
       setIsEditing(false);
     }
@@ -134,6 +152,7 @@ function JobsManager() {
       salaryRange: "",
       officeType: "",
       jobType: "",
+      jobLink: "",
     });
     setIsEditing(false);
   };
@@ -204,6 +223,9 @@ function JobsManager() {
                     Job Type
                   </th>
                   <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                    Job Link
+                  </th>
+                  <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
                     Actions
                   </th>
                 </tr>
@@ -240,6 +262,15 @@ function JobsManager() {
                       <p className="text-gray-900 whitespace-no-wrap">
                         {job.jobType}
                       </p>
+                    </td>
+                    <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                      <a
+                        target="_blank"
+                        href={job.jobLink}
+                        className="text-gray-900 whitespace-no-wrap underline"
+                      >
+                        View
+                      </a>
                     </td>
                     <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                       <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
@@ -310,6 +341,24 @@ function JobsManager() {
                       onChange={handleInputChange}
                       placeholder="Enter job name"
                       className="mt-1 text-black block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="jobLink"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      Job Link
+                    </label>
+                    <input
+                      type="text"
+                      id="jobLink"
+                      name="jobLink"
+                      value={currentJob.jobLink}
+                      onChange={handleInputChange}
+                      placeholder="Enter job domain"
+                      className="mt-1 block text-black w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500"
                       required
                     />
                   </div>
@@ -545,6 +594,59 @@ function RegistrationsViewer() {
                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                   <p className="text-gray-900 whitespace-no-wrap">
                     {registration.passOut}
+                  </p>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+function ContactsManager() {
+  const [contacts, setcontacts] = useState<any>([]);
+
+  useEffect(() => {
+    fetchRegistrations();
+  }, []);
+
+  const fetchRegistrations = async () => {
+    const contactsCollection = collection(db, "contacts");
+    const contactsSnapshot = await getDocs(contactsCollection);
+    const registrationList = contactsSnapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+    setcontacts(registrationList);
+  };
+
+  return (
+    <div className="container mx-auto px-4 sm:px-8">
+      <div className="overflow-x-auto">
+        <table className="min-w-full leading-normal">
+          <thead>
+            <tr>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                Phone
+              </th>
+              <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                Message
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {contacts.map((registration: any) => (
+              <tr key={registration.id}>
+                <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                  <p className="text-gray-900 whitespace-no-wrap">
+                    {registration.phone}
+                  </p>
+                </td>
+                <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                  <p className="text-gray-900 whitespace-no-wrap">
+                    {registration.message}
                   </p>
                 </td>
               </tr>
