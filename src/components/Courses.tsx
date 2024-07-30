@@ -1,7 +1,7 @@
 const Courses = () => {
   return (
-    <section className="bg-backgroundColor py-16">
-      <div className="flex flex-col justify-center items-center  py-10 px-4 text-center w-[90%] mr-auto ml-auto  lg:w-[85%] xl:w-[70%]  2xl:w-50% ">
+    <section className="bg-backgroundColor py-16 px-6">
+      <div className="flex flex-col justify-center items-center   px-4 text-center w-[90%] mr-auto ml-auto  lg:w-[85%] xl:w-[70%]  2xl:w-50% ">
         <h2 className="text-4xl  xl:text-5xl leading-[1.125] font-bold text-black">
           Courses
         </h2>
@@ -80,9 +80,10 @@ const MissedEventCard = ({ data }: any) => {
       ></img>
       <figcaption className="lg:flex lg:flex-col lg:justify-between  px-4 py-3 text-lg font-medium bg-[#1e1e1e]">
         {/* {data.name} */}
-        <button className="px-4 py-2 rounded-full mt-4 w-full text-blue-600 rounded border-2 border-current transition-all outline-none hover:text-blue-800 hover:bg-blue-600/10 focus:text-blue-800 focus:bg-blue-800/10">
+        {/* <button className="px-4 py-2 rounded-full mt-4 w-full text-blue-600 rounded border-2 border-current transition-all outline-none hover:text-blue-800 hover:bg-blue-600/10 focus:text-blue-800 focus:bg-blue-800/10">
           {data.buttonText}
-        </button>
+        </button> */}
+        <p>Course Name</p>
       </figcaption>
     </figure>
   );

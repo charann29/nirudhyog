@@ -1,15 +1,16 @@
 const Metrics = () => {
   return (
-    <section className="relative z-0 mx-auto -my-6 bg-[#004AAD] py-24">
+    <section className="relative z-0 mx-auto  bg-[#004AAD] px-6  py-16">
       <h2 className="text-4xl  xl:text-5xl leading-[1.125] font-bold text-white text-center mb-12">
         Numbers
       </h2>
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-6 lg:gap-[72px]">
-        <div className="COUNT flex h-72 w-72 flex-col items-center justify-center rounded-3xl bg-purple-200 px-4 py-8 text-center md:px-6 md:py-10">
+      <div className="mx-auto px-8 flex max-w-6xl flex-wrap items-center justify-center gap-6 lg:gap-[72px]">
+        <div className="COUNT w-full flex lg:h-72 lg:w-72 flex-col items-center justify-center rounded-3xl bg-purple-200 px-4 py-8 text-center md:px-6 md:py-10">
           <svg
             width={80}
             height={81}
             fill="none"
+            className="hidden lg:block"
             xmlns="http://www.w3.org/2000/svg"
           >
             <g clipPath="url(#members_svg__a)" fill="#121212">
@@ -35,10 +36,11 @@ const Metrics = () => {
           <h2 className="text-6xl text-white font-semibold">200,000+</h2>
           <p className="text-white">Community members</p>
         </div>
-        <div className="COUNT flex h-72 w-72 flex-col items-center justify-center rounded-3xl bg-green-300 px-4 py-8 text-center md:px-6 md:py-10">
+        <div className="COUNT flex w-full lg:h-72 lg:w-72 flex-col items-center justify-center rounded-3xl bg-green-300 px-4 py-8 text-center md:px-6 md:py-10">
           <svg
             width={80}
             height={81}
+            className="hidden lg:block"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -54,11 +56,12 @@ const Metrics = () => {
           <h2 className="text-6xl text-white font-semibold">5,500+</h2>
           <p className="text-white">Schools and colleges across India</p>
         </div>
-        <div className="COUNT flex h-72 w-72 flex-col items-center justify-center rounded-3xl bg-yellow-300 px-4 py-8 text-center md:px-6 md:py-10">
+        <div className="COUNT flex w-full lg:h-72 lg:w-72 flex-col items-center justify-center rounded-3xl bg-yellow-300 px-4 py-8 text-center md:px-6 md:py-10">
           <svg
             width={78}
             height={81}
             fill="none"
+            className="hidden lg:block"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path

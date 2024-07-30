@@ -5,7 +5,7 @@ import Plus from "../assets/Plus";
 const FAQ = () => {
   return (
     <div className="bg-[#f0fbff] w-full">
-      <section className=" max-w-[65rem] mx-auto py-24 px-4 ">
+      <section className=" max-w-[65rem] mx-auto  px-6 py-16 px-4 ">
         <div className="onBoardSection 2xl:w-50% !block">
           <h2 className="text-4xl  xl:text-5xl leading-[1.125] font-bold text-black text-center mb-12">
             FAQS

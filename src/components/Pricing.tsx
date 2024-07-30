@@ -1,7 +1,7 @@
 const PricePlan = () => {
   return (
-    <section className="select-none mt-0  text-white   bg-[#f0fbff]  ">
-      <div className="container relative h-full max-w-[65rem] mx-auto  py-18 lg:py-24">
+    <section className="select-none mt-0  text-white  px-6  bg-[#f0fbff]  ">
+      <div className="container relative  max-w-[65rem] mx-auto   py-16">
         <h2 className="text-4xl   xl:text-5xl leading-[1.125] font-bold text-black text-center mb-12">
           Pricing
         </h2>
