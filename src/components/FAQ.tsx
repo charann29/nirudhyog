@@ -4,7 +4,7 @@ import Plus from "../assets/Plus";
 
 const FAQ = () => {
   return (
-    <section className="bg-white max-w-[65rem] mx-auto py-24 ">
+    <section className="bg-white max-w-[65rem] mx-auto py-24 px-4 ">
       <div className="onBoardSection 2xl:w-50% !block">
         <h2 className="text-4xl  xl:text-5xl leading-[1.125] font-bold text-black text-center mb-12">
           FAQS
@@ -55,18 +55,18 @@ const FAQPoint = ({ faq }: any) => {
   );
 };
 
-const Header = ({ text, borderLength = "100%" }: any) => {
-  return (
-    <div className="w-min  mb-4 ">
-      <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-black mb-3">
-        {text}
-      </h1>
-      <div
-        className={`h-2 w-[${borderLength}]  rounded-full bg-[#004AAD]`}
-      ></div>
-    </div>
-  );
-};
+// const Header = ({ text, borderLength = "100%" }: any) => {
+//   return (
+//     <div className="w-min  mb-4 ">
+//       <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-black mb-3">
+//         {text}
+//       </h1>
+//       <div
+//         className={`h-2 w-[${borderLength}]  rounded-full bg-[#004AAD]`}
+//       ></div>
+//     </div>
+//   );
+// };
 
 const FAQS_DATA = [
   {

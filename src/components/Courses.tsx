@@ -1,7 +1,6 @@
-import React, { useState } from "react";
 
 const Courses = () => {
-  const [current, setCurrent] = useState(0);
+
   return (
     <section className="bg-backgroundColor py-16">
       <div className="flex flex-col justify-center items-center  py-10 px-4 text-center w-[90%] mr-auto ml-auto  lg:w-[85%] xl:w-[70%]  2xl:w-50% ">
@@ -48,30 +47,30 @@ const Courses = () => {
 
 export default Courses;
 
-const PastEventButton = ({
-  text,
-  index,
-  current,
-  setCurrent,
-  color = false,
-}: any) => {
-  const clickHandler = () => {
-    setCurrent(index);
-  };
+// const PastEventButton = ({
+//   text,
+//   index,
+//   current,
+//   setCurrent,
+//   color = false,
+// }: any) => {
+//   const clickHandler = () => {
+//     setCurrent(index);
+//   };
 
-  return (
-    <button
-      className={` ${
-        current === index
-          ? "outline-none px-4 py-2 min-w-max transition-all rounded-full bg-[#004AAD] text-current"
-          : "outline-none px-4 py-2 min-w-max transition-all border-2 border-current rounded-full hover:scale-95 text-black hover:bg-[#004AAD] hover:text-white   focus:text-[#004AAD] "
-      } ${color === true ? "text-gray-800 border-gray-800" : ""}`}
-      onClick={clickHandler}
-    >
-      {text}
-    </button>
-  );
-};
+//   return (
+//     <button
+//       className={` ${
+//         current === index
+//           ? "outline-none px-4 py-2 min-w-max transition-all rounded-full bg-[#004AAD] text-current"
+//           : "outline-none px-4 py-2 min-w-max transition-all border-2 border-current rounded-full hover:scale-95 text-black hover:bg-[#004AAD] hover:text-white   focus:text-[#004AAD] "
+//       } ${color === true ? "text-gray-800 border-gray-800" : ""}`}
+//       onClick={clickHandler}
+//     >
+//       {text}
+//     </button>
+//   );
+// };
 
 const MissedEventCard = ({ data }: any) => {
   return (

@@ -1,7 +1,7 @@
 const HomeHero = () => {
   return (
     <div className="bg-[#101114] w-screen h-screen text-white flex justify-center items-center">
-      <div className="space-y-8">
+      <div className="space-y-8 px-4">
         <div className="max-w-6xl text-center mx-auto text-2xl font-semibold leading-relaxed md:text-4xl lg:text-6xl">
           <h1 id="Headline" style={{ transformStyle: "preserve-3d" }}>
             The largest community of tomorrow’s
