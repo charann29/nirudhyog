@@ -1,9 +1,9 @@
 const PricePlan = () => {
   return (
-    <section className="select-none my-12 mt-0 md:mt-24  text-white  bg-gradient-to-b from-transparent via-[#101114] to-transparent bg-[#101114] py-[50px] ">
+    <section className="select-none mt-0  text-white   bg-[#f0fbff]  ">
       <div className="container relative h-full max-w-[65rem] mx-auto  py-18 lg:py-24">
-        <h2 className="text-4xl  xl:text-5xl leading-[1.125] font-bold text-white text-center mb-12">
-          If you missed something, access it right here
+        <h2 className="text-4xl   xl:text-5xl leading-[1.125] font-bold text-black text-center mb-12">
+          Pricing
         </h2>
         <div className="dark mb-6 flex flex-col items-center md:items-start justify-center gap-7 md:mb-14 md:flex-row">
           {Data.map((d, index) => (
@@ -13,7 +13,7 @@ const PricePlan = () => {
               className={`text-white  ${
                 index % 2 === 1
                   ? "!bg-[linear-gradient(142deg,#130C61_0%,#171254_100%)]"
-                  : "bg-[linear-gradient(142deg,rgba(89,12,230,0.30)_0%,#590ce612_100%)]"
+                  : "bg-[#1f2937]"
               } border-gray-100 text-gray-900 dark:border-[#4D3A77] dark:text-white [&_p]:text-gray-500 dark:[&_p]:text-gray-400 flex max-w-[480px] flex-col rounded-3xl border p-4 md:p-6 basis-1/2 `}
             >
               <div className="mb-5 flex items-center justify-between md:mb-7">

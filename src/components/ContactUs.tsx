@@ -1,6 +1,6 @@
 const ContactUs = () => {
   return (
-    <div className="  w-full py-8 px-5 md:py-16 ">
+    <div className="bg-[#f0fbff]  w-full py-8 px-5 md:py-16 ">
       <div
         className="mx-auto flex max-w-[60rem] flex-col   justify-center gap-4 rounded-xl bg-white p-4 md:flex-row md:gap-12 md:p-24"
         style={{

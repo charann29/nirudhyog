@@ -1,8 +1,8 @@
 const Metrics = () => {
   return (
-    <section className="relative z-0 mx-auto -my-6 bg-[#101114] py-24">
+    <section className="relative z-0 mx-auto -my-6 bg-[#004AAD] py-24">
       <h2 className="text-4xl  xl:text-5xl leading-[1.125] font-bold text-white text-center mb-12">
-        If you missed something, access it right here
+        Numbers
       </h2>
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-6 lg:gap-[72px]">
         <div className="COUNT flex h-72 w-72 flex-col items-center justify-center rounded-3xl bg-purple-200 px-4 py-8 text-center md:px-6 md:py-10">
