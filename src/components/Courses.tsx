@@ -1,9 +1,9 @@
 const Courses = () => {
   return (
-    <section className="bg-backgroundColor py-16 px-6">
+    <section id="#courses" className="bg-backgroundColor py-16 px-6">
       <div className="flex flex-col justify-center items-center   px-4 text-center w-[90%] mr-auto ml-auto  lg:w-[85%] xl:w-[70%]  2xl:w-50% ">
-        <h2 className="text-4xl  xl:text-5xl leading-[1.125] font-bold text-black">
-          Courses
+        <h2 className="text-2xl  xl:text-5xl leading-[1.125] font-bold text-black">
+          A place for individuals aspiring to become a skilled engineer
         </h2>
         {/* <div className="flex overflow-x-auto flex-wrap gap-8 justify-center p-4 mx-auto mt-4 max-w-2xl no-scrollbar">
           <PastEventButton
@@ -36,7 +36,7 @@ const Courses = () => {
           className="cursor-pointer text-black flex shrink-0 justify-center items-center gap-2 font-semibold transition-all duration-300 rounded-full focus-visble:ring focus-visble:ring-red-800 focus-visble:ring-opacity-10 ring-red-800 focus:outline-none select-none disabled:cursor-not-allowed disabled:opacity-80   bg-[#004AAD]  lg:px-8 px-7 lg:py-4 py-3 lg:text-lg text-md w-full lg:w-auto  text-white mt-12"
           type="button"
         >
-          Access All Courses
+          Know More
         </button>
       </div>
     </section>

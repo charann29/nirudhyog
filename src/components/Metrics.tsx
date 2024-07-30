@@ -1,10 +1,10 @@
 const Metrics = () => {
   return (
     <section className="relative z-0 mx-auto  bg-[#004AAD] px-6  py-16">
-      <h2 className="text-4xl  xl:text-5xl leading-[1.125] font-bold text-white text-center mb-12">
-        Numbers
+      <h2 className="text-2xl  xl:text-4xl leading-[1.125] font-bold text-white text-center mb-12">
+        Achieve your design north-star metrics
       </h2>
-      <div className="mx-auto px-8 flex max-w-6xl flex-wrap items-center justify-center gap-6 lg:gap-[72px]">
+      <div className="mx-auto  flex max-w-6xl flex-wrap items-center justify-center gap-6 lg:gap-[72px]">
         <div className="COUNT w-full flex lg:h-72 lg:w-72 flex-col items-center justify-center rounded-3xl bg-purple-200 px-4 py-8 text-center md:px-6 md:py-10">
           <svg
             width={80}
@@ -33,8 +33,8 @@ const Metrics = () => {
               </clipPath>
             </defs>
           </svg>
-          <h2 className="text-6xl text-white font-semibold">200,000+</h2>
-          <p className="text-white">Community members</p>
+          <h2 className="text-4xl text-white font-semibold">100%</h2>
+          <p className="text-white"> ATS Upgrade(profile builfing)</p>
         </div>
         <div className="COUNT flex w-full lg:h-72 lg:w-72 flex-col items-center justify-center rounded-3xl bg-green-300 px-4 py-8 text-center md:px-6 md:py-10">
           <svg
@@ -53,7 +53,7 @@ const Metrics = () => {
               fill="#121212"
             />
           </svg>
-          <h2 className="text-6xl text-white font-semibold">5,500+</h2>
+          <h2 className="text-4xl text-white font-semibold">5,500+</h2>
           <p className="text-white">Schools and colleges across India</p>
         </div>
         <div className="COUNT flex w-full lg:h-72 lg:w-72 flex-col items-center justify-center rounded-3xl bg-yellow-300 px-4 py-8 text-center md:px-6 md:py-10">
@@ -73,8 +73,8 @@ const Metrics = () => {
               fill="#121212"
             />
           </svg>
-          <h2 className="text-6xl text-white font-semibold">1500+</h2>
-          <p className="text-white">Free events organized</p>
+          <h2 className="text-4xl text-white font-semibold">15 Days</h2>
+          <p className="text-white">start earning confidence within</p>
         </div>
       </div>
     </section>

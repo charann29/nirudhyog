@@ -111,7 +111,7 @@ export default PricePlan;
 
 const Data = [
   {
-    price: "2000",
+    price: "2300",
     priceTag: "",
     heading: "Growth",
     headerTag: `Recorded Learning
@@ -156,7 +156,7 @@ const Data = [
     ],
   },
   {
-    price: "4000",
+    price: "4800",
     priceTag: "",
     heading: "Foundation",
     headerTag: `Comprehensive

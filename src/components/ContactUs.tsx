@@ -11,30 +11,30 @@ const ContactUs = () => {
         <div className="md:w-[50%]">
           <div className="flex items-center gap-2">
             <p className="text-[19px] text-black md:text-[24px]">
-              Join our WhatsApp community
+              Connect with us for any questions
             </p>
           </div>
           <p className=" mt-4 text-[#747474]">
-            Join a group of experts who want to know more about latest Creator
-            Economy trends and engage with knowledgeable posts.
-            <br className="" /> Every alternate day we share an interesting
-            insight that will help you in your content creation journey.
+            For technical questions, please post your questions on our forum
+            where you can get help from fellow students.
+            <br className="" /> For course suggestions and career advice, check
+            out our learning paths.
           </p>
         </div>
         <div className="flex flex-col gap-2 md:w-[40%]  ">
-          <input
-            className="w-full rounded-md border-[#CCCCCC] bg-[#EBEBEB] p-2  text-[16px] text-black  outline-none"
-            placeholder="Phone Number"
-            defaultValue=""
-          />
           <input
             className="w-full rounded-md border-[#CCCCCC] bg-[#EBEBEB] p-2 text-[16px]   text-black  outline-none"
             placeholder="Email"
             defaultValue=""
           />
+          <textarea
+            className="w-full rounded-md border-[#CCCCCC] bg-[#EBEBEB] p-2  text-[16px] text-black  outline-none"
+            placeholder="Message"
+            defaultValue=""
+          />
           <button className="mt-2 cursor-pointer rounded-md bg-[#004AAD] p-2 ">
             <div className="flex items-center  justify-center gap-2 text-[16px]">
-              {/* */}COUNT ME IN
+              {/* */}Send
             </div>
           </button>
         </div>

@@ -1,9 +1,25 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/Logo";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const clickHandler = () => {
     console.log("NavBar  ::: clickHandler ::: came");
@@ -14,7 +30,7 @@ const NavBar = () => {
     <header
       className={`fixed  z-20 w-full   transition-all duration-200 ${
         click ? "bg-[#121212]" : ""
-      } `}
+      } ${isScrolled ? "backdrop-blur-md bg-[#004aad]/10" : "bg-transparent"} `}
     >
       <div className="w-full mx-auto bg-[#004aad] p-[2px]">
         <p className="text-center">
@@ -36,7 +52,7 @@ const NavBar = () => {
         </Link>
         <div className="hidden lg:flex cursor-pointer rounded-full bg-gray-800 px-4 py-2 shadow-xl  lg:px-6 lg:py-3 items-center   gap-3 !cursor-default">
           <a
-            href="#cirriculum"
+            href="courses"
             className="cursor-pointer select-none rounded-full  font-semibold text-gray-50 transition duration-300 hover:text-blue-300"
           >
             Courses
@@ -48,24 +64,25 @@ const NavBar = () => {
             Services
           </Link>
           <Link
-            to="/mentorship"
+            to="/contactus"
             className="cursor-pointer select-none rounded-full  font-semibold text-gray-50 transition duration-300 hover:text-blue-300"
           >
             Contact Us
           </Link>
           <Link
-            to="/events"
+            to="/aboutus"
             className="cursor-pointer select-none rounded-full  font-semibold text-gray-50 transition duration-300 hover:text-blue-300"
           >
             About Us
           </Link>
         </div>
-        <div
+        <a
+          href="/register"
           className="cursor-pointer rounded-full bg-gray-800 px-4 py-2 shadow-xl  lg:px-6 lg:py-3 hidden lg:block   !bg-primary font-semibold "
           style={{ transform: "none" }}
         >
-          <a>Apply a job</a>
-        </div>
+          <p>Join Us</p>
+        </a>
         <div className="flex gap-3 lg:hidden">
           <button
             className="cursor-pointer flex shrink-0  items-center justify-center  rounded-full  transition-all duration-300 select-none   text-gray-50  hover:bg-gray-700  p-2  gap-4 relative h-10 w-10 bg-gray-800  active:outline-none lg:hidden"
@@ -96,9 +113,9 @@ const NavBar = () => {
       </nav>
 
       <div
-        className={`transform  ${
-          click ? "translate-x-0" : "-translate-x-[200%]"
-        } duration-300  ml-auto mr-auto bg-[#121212]  border-[#1E1E1E]  border-t-[1px]   w-[90%] lg:w-[80%] xl:w-[70%] 2xl:w-50%   py-4 lg:hidden`}
+        className={`transform  h-0 w-full px-6  ${
+          click ? "translate-x-0 h-auto py-4" : "-translate-x-[200%]"
+        } duration-300  ml-auto mr-auto bg-[#121212]  border-[#1E1E1E]  border-t-[1px]   w-[90%] lg:w-[80%] xl:w-[70%] 2xl:w-50%    lg:hidden`}
       >
         <a href="#cirriculum" className="mb-2 text-[18px] cursor-pointer">
           Cirriculum

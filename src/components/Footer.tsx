@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="flex flex-col gap-6 md:flex-row md:flex-wrap md:justify-between md:gap-4 lg:flex-nowrap">
           <div className="max-w-xs">
             <p className="font-inter text-[18px] text-gray-300 ">
-              Goalstreet is one of India's largest student communities that
+              Nirudhyog is one of India's largest student communities that
               provides a one-stop platform for students to learn new skills,
               network with peers, and grow as an individual.
             </p>
@@ -134,7 +134,7 @@ const Footer = () => {
           </div>
           <div className="mt-12 lg:mt-0 mx-auto text-center lg:text-left">
             <p className="font-bold text-gray-300 ">
-              © 2024. GOAL STREET. All rights reserved.
+              © 2024. Nirudhyog. All rights reserved.
             </p>
             <p className="font-bold text-blue-500 underline cursor-pointer">
               Developed by ElevateBox

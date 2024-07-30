@@ -72,28 +72,28 @@ const FAQPoint = ({ faq }: any) => {
 
 const FAQS_DATA = [
   {
-    QUESTION: "How do I stay up to date on the latest updates sddsd?",
+    QUESTION: "What are the prerequisites to join?",
     ANSWER:
-      "Please subscribe to our neewsletter to saty up to date on the latest updates  saty up to date on the latest updates",
+      "The only prerequisites to join the cohort are that you should have a basic knowledge of respective domain, and willingness to learn",
   },
   {
-    QUESTION: "How do I stay up to date on the latest updates?",
+    QUESTION: "Why should I trust you guys?",
     ANSWER:
-      "Please subscribe to our neewsletter to saty up to date on the latest updates",
+      "Our cohorts saw 5000+ registrations and a rating of 4.6/5 from cohort members! We have a community of 20,000+ students, freelancers, and entrepreneurs from across the country growing with us. bluelearn is backed by Lightspeed India, Elevation Capital, Titan Capital, and a host of angel investors!",
   },
   {
-    QUESTION: "How do I stay up to date on the latest updates?",
+    QUESTION: "How do I choose between the Foundation and Growth Plan?",
     ANSWER:
-      "Please subscribe to our neewsletter to saty up to date on the latest updates",
+      "The Growth Plan is perfect for you if: -You want to upskill in design with hands-on projects -You already know the basics of the domain choosen -You want to build your portfolio and find paid work -You want feedback on your projects from someone experienced You’ll be a great fit for the Foundation Plan if: -You want to learn scratch -You want to upskill in code with hands-on projects -You want to build your portfolio and find your first paid work",
   },
   {
-    QUESTION: "How do I stay up to date on the latest updates?",
+    QUESTION: "How are you guys helping us get internships and gigs?",
     ANSWER:
-      "Please subscribe to our neewsletter to saty up to date on the latest updates",
+      "Being one of India's largest remote internships platforms, we get 1,000+ paid internships and freelancing opportunities posted on our platform every single month. These opportunities range across tech, design, marketing, product, and more. As a member of cohort, you’ll get exclusive early access to all opportunities, and a badge to help you stand out from the crowd!",
   },
   {
-    QUESTION: "How do I stay up to date on the latest updates?",
+    QUESTION: "What’s the last date to make the payment?",
     ANSWER:
-      "Please subscribe to our neewsletter to saty up to date on the latest updates",
+      "We have limited seats and cohort acceptance happens through a screening process on a first-come first-serve basis. Payments close a week before the cohort starts, or earlier if we fill all the available seats.",
   },
 ];
