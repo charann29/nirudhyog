@@ -2,7 +2,7 @@ const Metrics = () => {
   return (
     <section className="relative z-0 mx-auto  bg-[#004AAD] px-6  py-16">
       <h2 className="text-2xl  xl:text-4xl leading-[1.125] font-bold text-white text-center mb-12">
-        Achieve your need with our Services
+        Achieve your dream job with our Services
       </h2>
       <div className="mx-auto  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-6xl items-center justify-center gap-2 lg:gap-8 ">
         <a
