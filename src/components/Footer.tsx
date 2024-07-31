@@ -14,7 +14,7 @@ const Footer = () => {
                 href="https://www.instagram.com/nirudhyog"
                 target="_blank"
                 role="group"
-                className="cursor-pointer flex shrink-0 gap-2 items-center justify-center w-fit rounded-full focus-visble:ring focus-visble:ring-gray-800 focus-visble:ring-opacity-10 ring-gray-800 focus:outline-none transition-all duration-300 select-none disabled:opacity-80 text-gray-50 dark:text-gray-900 bg-gray-900 dark:bg-gray-50 hover:bg-gray-800 dark:hover:bg-gray-100 p-3  gap-4"
+                className="cursor-pointer flex shrink-0 gap-2 items-center justify-center w-fit rounded-full focus-visble:ring focus-visble:ring-gray-800 focus-visble:ring-opacity-10 ring-gray-800 focus:outline-none transition-all duration-300 select-none disabled:opacity-80 text-gray-50  bg-gray-900 hover:bg-gray-800 p-3  gap-4"
                 type="button"
               >
                 <svg
@@ -34,7 +34,7 @@ const Footer = () => {
                 target="_blank"
                 href="https://wa.me/message/3IZKT7KUXCIIB1"
                 role="group"
-                className="cursor-pointer flex shrink-0 gap-2 items-center justify-center w-fit rounded-full focus-visble:ring focus-visble:ring-gray-800 focus-visble:ring-opacity-10 ring-gray-800 focus:outline-none transition-all duration-300 select-none disabled:opacity-80 text-gray-50 dark:text-gray-900 bg-gray-900 dark:bg-gray-50 hover:bg-gray-800 dark:hover:bg-gray-100 p-3  gap-4"
+                className="cursor-pointer flex shrink-0 gap-2 items-center justify-center w-fit rounded-full focus-visble:ring focus-visble:ring-gray-800 focus-visble:ring-opacity-10 ring-gray-800 focus:outline-none transition-all duration-300 select-none disabled:opacity-80 text-gray-50  bg-gray-900 hover:bg-gray-800 p-3  gap-4"
                 type="button"
               >
                 <svg
@@ -54,7 +54,7 @@ const Footer = () => {
                 target="_blank"
                 href="https://whatsapp.com/channel/0029VaJEe68BadmWclssun3J"
                 role="group"
-                className="cursor-pointer flex shrink-0 gap-2 items-center justify-center w-fit rounded-full focus-visble:ring focus-visble:ring-gray-800 focus-visble:ring-opacity-10 ring-gray-800 focus:outline-none transition-all duration-300 select-none disabled:opacity-80 text-gray-50 dark:text-gray-900 bg-gray-900 dark:bg-gray-50 hover:bg-gray-800 dark:hover:bg-gray-100 p-3  gap-4"
+                className="cursor-pointer flex shrink-0 gap-2 items-center justify-center w-fit rounded-full focus-visble:ring focus-visble:ring-gray-800 focus-visble:ring-opacity-10 ring-gray-800 focus:outline-none transition-all duration-300 select-none disabled:opacity-80 text-gray-50  bg-gray-900  hover:bg-gray-800  p-3  gap-4"
                 type="button"
               >
                 <svg
@@ -74,7 +74,7 @@ const Footer = () => {
                 target="_blank"
                 href="https://wa.me/c/918121398942"
                 role="group"
-                className="cursor-pointer flex shrink-0 gap-2 items-center justify-center w-fit rounded-full focus-visble:ring focus-visble:ring-gray-800 focus-visble:ring-opacity-10 ring-gray-800 focus:outline-none transition-all duration-300 select-none disabled:opacity-80 text-gray-50 dark:text-gray-900 bg-gray-900 dark:bg-gray-50 hover:bg-gray-800 dark:hover:bg-gray-100 p-3  gap-4"
+                className="cursor-pointer flex shrink-0 gap-2 items-center justify-center w-fit rounded-full focus-visble:ring focus-visble:ring-gray-800 focus-visble:ring-opacity-10 ring-gray-800 focus:outline-none transition-all duration-300 select-none disabled:opacity-80 text-gray-50  bg-gray-900  hover:bg-gray-800 x p-3  gap-4"
                 type="button"
               >
                 <svg
