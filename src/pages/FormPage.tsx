@@ -116,7 +116,7 @@ const Register = () => {
                       Register
                     </h2>
                     <p className="text-gray-400 text-sm">
-                      please fill all the fileds
+                      please fill all the fields
                     </p>
                   </div>
                 </div>
@@ -131,7 +131,7 @@ const Register = () => {
                     className="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
                     name="name"
                     id="name"
-                    placeholder="Sai Charan"
+                    placeholder="Charan"
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -151,7 +151,7 @@ const Register = () => {
                     name="phoneNumber"
                     id="phone"
                     maxLength={10}
-                    placeholder={"9878787123"}
+                    placeholder={"9887988123"}
                     type="tel"
                     required
                     value={phoneNumber}
@@ -170,7 +170,7 @@ const Register = () => {
                     className="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
                     name="email"
                     id="email"
-                    placeholder="20311A05M7@sreenidhi.edu.in"
+                    placeholder="20311A0590@iitm.edu.in"
                     type="email"
                     required
                     value={email}
@@ -190,7 +190,7 @@ const Register = () => {
                     className="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
                     name="college"
                     id="college"
-                    placeholder="NIT Trichy"
+                    placeholder="IIT Madras"
                     type="text"
                     required
                     value={college}

@@ -6,7 +6,7 @@ const MentorShip = () => {
     >
       <div className="relative h-[40vh] md:h-[50vh] w-full flex justify-center items-center">
         <h2 className="container mx-auto mb-[60px] max-w-6xl text-center text-[25px] font-bold md:text-5xl lg:text-7xl text-white">
-          Connect with senior engineering mentors and get actionable insights
+          connect with senior engineering mentors and get actionable insights
         </h2>
       </div>
     </section>

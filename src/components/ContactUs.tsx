@@ -30,7 +30,7 @@ const Contact = () => {
         <div className="md:w-[50%]">
           <div className="flex items-center gap-2">
             <p className="text-[19px] text-black md:text-[24px]">
-              Connect with us for any questions or concerns
+              connect with us for any questions or concerns
             </p>
           </div>
           <p className=" mt-4 text-[#747474]">

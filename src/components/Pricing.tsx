@@ -132,28 +132,21 @@ const Data = [
         text: "Labs & Challenges",
         provided: true,
       },
-      {
-        text: "Projects",
-        provided: true,
-      },
+
       {
         text: "Certificate",
         provided: true,
       },
       {
-        text: `Internship Offer from
-              Companies (Online/
-              Offline)`,
+        text: `Placement Support from
+            Companies (Online/
+            Offline)`,
         provided: true,
       },
       {
-        text: "Support Post Internship",
+        text: "Community Support",
         provided: true,
-      },
-      {
-        text: "Pricing",
-        provided: true,
-      },
+      }
     ],
   },
   {
@@ -194,28 +187,21 @@ const Data = [
         text: "Labs & Challenges",
         provided: true,
       },
-      {
-        text: "Projects",
-        provided: true,
-      },
+
       {
         text: "Certificate",
         provided: true,
       },
       {
-        text: `Internship Offer from
+        text: `Placement Support from
             Companies (Online/
             Offline)`,
         provided: true,
       },
       {
-        text: "Support Post Internship",
+        text: "Community Support",
         provided: true,
-      },
-      {
-        text: "Pricing",
-        provided: true,
-      },
+      }
     ],
   },
 ];
